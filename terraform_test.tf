@@ -9,7 +9,7 @@ key_name = "abhi"
 user_data = <<-EOF
 #!/bin/bash
 sudo zypper install -y git 
-git clone https://abhirup92:AbhirupBili1@github.com/abhirup92/adp-mkpl-test-ABHIRUP.git
+git clone https://abhirup92:79a464f5b271b644083b2e6ee9f579e9b9dd1794@github.com/abhirup92/adp-mkpl-test-ABHIRUP.git
 EOF
 }
 
