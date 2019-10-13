@@ -3,7 +3,6 @@ region = "us-east-2"
 }
 resource "aws_instance" "example" {
   ami           = "ami-01a3959899e3dc7c6"
-  name = "example"
   instance_type = "t2.micro"
   security_groups = ["launch-wizard-3"]
 key_name = "abhi"
