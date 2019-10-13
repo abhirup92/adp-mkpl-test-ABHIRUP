@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - name: install node npm
+      shell: sudo zypper install -y nodejs
