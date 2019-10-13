@@ -18,3 +18,15 @@ ansible-playbook node-npm-install.yml
 EOF
 }
 
+resource "aws_s3_bucket" "example" {
+  bucket = "abhirup-test-first"
+  acl    = "public-read"
+}
+
+resource "aws_s3_bucket_public_access_block" "example1" {
+  bucket = "${aws_s3_bucket.example.id}"
+
+  block_public_acls   = true
+  block_public_policy = true
+}
+
